@@ -28,6 +28,25 @@ services:
           name: clinica-db-render
           property: password
 
+  - type: web
+    name: clinica-frontend
+    runtime: static
+    repo: https://github.com/davipuddo/ES2_TP2.git
+    branch: main
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    envVars:
+      # Injeta o host público do backend; o api.js normaliza para https://host/api
+      - key: REACT_APP_API_URL
+        fromService:
+          type: web
+          name: backend-spring
+          property: host
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
 
 databases:
   # Configuração do banco de dados PostgreSQL 15
