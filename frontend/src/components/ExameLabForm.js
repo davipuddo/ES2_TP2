@@ -37,7 +37,7 @@ function ExameLabForm() {
         <textarea name="descricao" placeholder="Descrição do Exame" value={exame.descricao} onChange={handleChange} required style={{ padding: '8px' }}></textarea>
         <select name="atendimentoId" value={exame.atendimentoId} onChange={handleChange} required style={{ padding: '8px' }}>
           <option value="">Selecione um Atendimento</option>
-          {atendimentos.map(a => (
+          {atendimentos?.map?.(a => (
             <option key={a.id} value={a.id}>Data: {a.data} - Profissional: {a.profissional?.nome}</option>
           ))}
         </select>

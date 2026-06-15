@@ -14,7 +14,9 @@ function ProfissionalForm() {
     e.preventDefault();
     const payload = {
       ...profissional,
-      categorias: profissional.categorias.split(',').map(c => c.trim()).filter(c => c)
+      //categorias: profissional?.categorias.split(',').map?.(c => c.trim()).filter(c => c)
+      categorias: profissional?.categorias ? profissional.categorias.split(',').map(c => c.trim()).filter(c => c) : []
+
     };
     try {
       await profissionalService.criar(payload);

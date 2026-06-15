@@ -43,7 +43,7 @@ function AtendimentoForm() {
         <input name="receitaSaude" placeholder="Receitas (separadas por vírgula)" value={atendimento.receitaSaude} onChange={handleChange} style={{ padding: '8px' }} />
         <select name="profissionalId" value={atendimento.profissionalId} onChange={handleChange} required style={{ padding: '8px' }}>
           <option value="">Selecione um Profissional</option>
-          {profissionais.map(p => (
+          {profissionais?.map?.(p => (
             <option key={p.id} value={p.id}>{p.nome}</option>
           ))}
         </select>
