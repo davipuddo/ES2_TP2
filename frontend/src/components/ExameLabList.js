@@ -42,7 +42,7 @@ function ExameLabList() {
           </tr>
         </thead>
         <tbody>
-          {exames.map(e => (
+          {exames?.map?.(e => (
             <tr key={e.id}>
               <td>{e.id}</td>
               <td>{e.descricao}</td>

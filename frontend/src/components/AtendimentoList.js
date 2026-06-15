@@ -45,7 +45,7 @@ function AtendimentoList() {
           </tr>
         </thead>
         <tbody>
-          {atendimentos.map(a => (
+          {atendimentos?.map?.(a => (
             <tr key={a.id}>
               <td>{a.id}</td>
               <td>{a.data}</td>
