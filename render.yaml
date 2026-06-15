@@ -28,12 +28,7 @@ services:
           name: clinica-db-render
           property: password
 
-  - type: static
-    name: meu-frontend-app
-    rootDir: frontend
-    buildCommand: npm install && npm run build
-    publishDir: dist
-  
+
 databases:
   # Configuração do banco de dados PostgreSQL 15
   - name: clinica-db-render
