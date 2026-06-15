@@ -44,7 +44,7 @@ function ProfissionalList() {
           </tr>
         </thead>
         <tbody>
-          {profissionais.map(p => (
+          {profissionais?.map?.(p => (
             <tr key={p.id}>
               <td>{p.id}</td>
               <td>{p.nome}</td>
