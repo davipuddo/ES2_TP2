@@ -2,6 +2,10 @@
 
 Sistema de Clínica Web para demonstração do ciclo completo de desenvolvimento de software.
 
+## Diagrama de Classe
+
+![diagrama](diagrama.png)
+
 ## Tecnologias
 
 | Camada | Tecnologia |
