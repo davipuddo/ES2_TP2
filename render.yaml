@@ -40,7 +40,7 @@ services:
         fromService:
           type: web
           name: backend-spring
-          property: host
+          property: url
     routes:
       - type: rewrite
         source: /*
