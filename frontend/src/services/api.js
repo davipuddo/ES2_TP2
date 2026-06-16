@@ -2,6 +2,13 @@ import axios from 'axios';
 
 // Normaliza o host vindo da variável de ambiente para incluir https:// e /api
 let host = process.env.REACT_APP_API_URL || 'https://backend-spring-uiem.onrender.com';
+
+// Se o host recebido for apenas o nome interno do Render (ex: backend-spring-xqws)
+// e não tiver ponto nem for localhost, adicionamos o sufixo publico do render
+if (!host.includes('.') && host !== 'localhost') {
+  host = host + '.onrender.com';
+}
+
 if (!host.startsWith('http')) {
   host = 'https://' + host;
 }
