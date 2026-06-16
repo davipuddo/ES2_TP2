@@ -3,8 +3,6 @@ services:
     name: backend-spring
     env: docker
     rootDir: backend
-    dockerfilePath: Dockerfile
-    dockerContext: .
     plan: free
     envVars:
       - key: DB_HOST

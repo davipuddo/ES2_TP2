@@ -1,6 +1,11 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'https://backend-spring-uiem.onrender.com';
+// Normaliza o host vindo da variável de ambiente para incluir https:// e /api
+let host = process.env.REACT_APP_API_URL || 'https://backend-spring-uiem.onrender.com';
+if (!host.startsWith('http')) {
+  host = 'https://' + host;
+}
+const API_URL = host.endsWith('/api') ? host : host + '/api';
 
 const api = axios.create({
   baseURL: API_URL,
