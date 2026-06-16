@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula: Desenvolvimento de Software - Agenda Web (Java + React + Git + CI/CD + AWS)</title>
+    <title>Aula: Desenvolvimento de Software - Clínica Web (Java + React + Git + CI/CD + AWS)</title>
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -51,7 +51,7 @@
 <body>
 <div class="container">
 
-<h1>&#9749; Desenvolvimento de Software: Agenda Web<small>Java (Spring Boot) + React | Git &rarr; GitHub &rarr; CI/CD &rarr; AWS | 2 Desenvolvedores | PostgreSQL</small></h1>
+<h1>&#9749; Desenvolvimento de Software: Clínica Web<small>Java (Spring Boot) + React | Git &rarr; GitHub &rarr; CI/CD &rarr; AWS | 2 Desenvolvedores | PostgreSQL</small></h1>
 
 <div class="section">
 <div class="toc">
@@ -78,7 +78,7 @@
 <div class="section" id="visao-geral">
 <h2>1. Vis&atilde;o Geral do Projeto e Arquitetura</h2>
 
-<h3>O Sistema: Agenda Web</h3>
+<h3>O Sistema: Clínica Web</h3>
 <table>
     <tr><th>Aspecto</th><th>Tecnologia</th></tr>
     <tr><td>Backend</td><td><strong>Java 17</strong> com <strong>Spring Boot 3.2</strong></td></tr>
@@ -386,7 +386,7 @@ mkdir -p frontend/src/{components,services}
 
 <span class="comment"># Primeiro commit</span>
 git add .
-git commit -m "chore: estrutura inicial do projeto Agenda Web (Java + React)"</div>
+git commit -m "chore: estrutura inicial do projeto Clínica Web (Java + React)"</div>
 </div>
 
 <h3><span class="step-number">2</span>Bruno Clona o Reposit&oacute;rio</h3>
@@ -396,7 +396,7 @@ cd agenda-web
 
 <span class="comment"># Verifica o hist&oacute;rico</span>
 git log --oneline
-<span class="comment"># a1b2c3d chore: estrutura inicial do projeto Agenda Web (Java + React)</span></div>
+<span class="comment"># a1b2c3d chore: estrutura inicial do projeto Clínica Web (Java + React)</span></div>
 
 <h3><span class="step-number">3</span>Cria&ccedil;&atilde;o de Branches</h3>
 <div class="dev1">
@@ -878,7 +878,7 @@ graph LR
 </div>
 
 <h3>Arquivo: .github/workflows/ci-cd.yml</h3>
-<div class="code-block"><span class="keyword">name:</span> CI/CD Pipeline - Agenda Web (Java + React)
+<div class="code-block"><span class="keyword">name:</span> CI/CD Pipeline - Clínica Web (Java + React)
 
 <span class="keyword">on:</span>
   push:

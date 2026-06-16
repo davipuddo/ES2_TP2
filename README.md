@@ -1,6 +1,6 @@
-# Agenda Web - Material Educacional
+# Clínica Web - Material Educacional
 
-Sistema de Agenda Web para demonstração do ciclo completo de desenvolvimento de software.
+Sistema de Clínica Web para demonstração do ciclo completo de desenvolvimento de software.
 
 ## Tecnologias
 
@@ -19,7 +19,7 @@ Sistema de Agenda Web para demonstração do ciclo completo de desenvolvimento d
 ## Estrutura do Projeto
 
 ```
-agenda-web/
+clinica-web/
 ├── backend/           # API REST (Java/Spring Boot)
 │   ├── pom.xml
 │   ├── Dockerfile
@@ -57,9 +57,5 @@ npm test
 
 ## Divisão de Trabalho
 
-- **DEV 1 - Ana:** CRUD de Contatos (ContatoController + ContatoList/Form)
-- **DEV 2 - Bruno:** CRUD de Compromissos (CompromissoController + CompromissoList/Form)
-
-## Apresentação
-
-Abra o arquivo `apresentacao_completa.html` no navegador para ver a apresentação completa da aula.
+- **DEV 1 - Davi Ferreira Puddo:** Backend, Frontend e Testes Unitários
+- **DEV 2 - Diego Feitosa Ferreira dos Santos:** Teste de integração, Pipeline CI/CD e Deploy
